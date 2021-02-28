@@ -24,7 +24,7 @@ class LoginViewController: UIViewController {
                     self.errorMessageLabel.text = e.localizedDescription
                     self.errorMessageLabel.numberOfLines = 0
                 } else {
-                    self.performSegue(withIdentifier: "LoginToChat", sender: self)
+                    self.performSegue(withIdentifier: K.loginSegue, sender: self)
                 }
             }
         }
