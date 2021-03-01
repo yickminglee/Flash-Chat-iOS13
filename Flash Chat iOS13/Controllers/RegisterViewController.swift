@@ -23,7 +23,6 @@ class RegisterViewController: UIViewController {
                 if let e = error {
                     print(e.localizedDescription)
                     self.errorMessageLabel.text = e.localizedDescription
-                    self.errorMessageLabel.numberOfLines = 0
                 } else {
                     // navigate to the ChatViewController
                     self.performSegue(withIdentifier: K.registerSegue, sender: self)
